@@ -1,0 +1,813 @@
+/* ===========================
+
+Author: MH Rafi
+Website: http://themegret.com
+
+============================== */
+
+/* ==================== CSS Structure ==================== 
+1. COMMON STYLES
+	- Reset Styles
+	- Common Classes
+	- Pre Loader Styles
+	
+2. HTML ELEMENTS STYLE
+	- Button Styles
+
+3. HEADER SECTION
+	- Main Navigation Styles
+	- Home section
+	
+4. FEATURE SECTION
+5. SERVICE SECTION
+6. STEP SECTION
+7. Video SECTION
+
+8. SCREENSHOT SECTION
+	- ScreenShots hover effect style
+
+9. TESTIMONIAL SECTION
+10. PRICING SECTION
+	- Folding Effect
+
+11. SUBSCIBE SECTION
+12. DOWNLOAD SECTION
+13. CONTACT SECTION
+14. FOOTER SECTION
+========================================================== */
+
+/*works*/
+#works{padding-top:6em;}
+#works figcaption a{border:1px solid #fff;margin-top: 1em;display: inline-block;color: #fff;padding: 0 2em;}
+#works figcaption a:hover{text-decoration: none;padding: 0 3em;}
+
+
+@media (max-width: 1200px) {
+	body{font:300 13px/13px Roboto,Arial,Helvetica;}
+	.navbar-brand{padding-top: 11px;}
+	.process ul li{margin:0 0.5em; }
+	
+	.grid figure h2{font: 700 1.5em Roboto,Arial,Helvetica;}
+	figure.effect-oscar figcaption{padding: 12%;}
+	figure.effect-oscar figcaption::before,figure.effect-chico figcaption::before{top: 20px;right: 20px;bottom: 20px;left: 20px;}
+
+	.partners img{margin: 0 25px 25px 0;}
+}
+/*works*/
+
+
+/* --------------- Reset Styles --------------- */
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 300;
+	color: #666666;
+	overflow-x: hidden !important;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+a:hover, a:focus, .btn:focus {
+    text-decoration: none;
+	outline: none;
+	color: #6c6b6b
+}
+
+input:focus, textarea:focus {
+	outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	text-transform:capitalize;
+	letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 82px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 60px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 45px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h5 {
+    font-size: 18px;
+	line-height: 25px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul, ol {
+	padding-left: 0 !important;
+}
+
+li {
+	list-style: none;
+}
+
+/* --------------- Common Classes --------------- */
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.strong {
+font-weight: 700;
+}
+
+.floatright {
+	float:right;
+}
+
+.floatleft {
+	float:left;
+}
+
+.floatnone {
+	float:none;
+}
+
+.fixed {
+	position:fixed;
+}
+
+.absolute {
+	position:absolute;
+}
+
+.relative {
+	position:relative;
+}
+
+.container {
+	position:relative;
+	z-index: 10;
+}
+
+.section-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.animated {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.section-title {
+	margin-bottom: 48px;
+}
+
+.section-title h3, .section-title h4 {
+	color: #F4F4F4;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	display: inline-block;
+	margin-top: 0;
+	padding: 8px 0;
+	
+}
+
+.section-overlay {
+	background: rgba(0, 0, 0, .7) !important;
+	z-index: 5;
+}
+
+
+
+/* --------------- Pre Loader Styles --------------- */
+#preloader {
+	position:fixed;
+	top: 0;
+	left: 0;
+	background-color:#FFF;
+	width: 100%;
+	height: 100%;
+	z-index: 10050;
+}
+
+.loading-circle {
+	position: absolute;
+	left: 49%;
+	top: 49%;
+	height: 48px;
+	width: 48px;
+	border-radius: 50%;
+	border-top: 2px solid #7F8C8D;
+	border-right: 2px solid rgba(0,0,0, 0);
+	border-bottom: 2px solid #7F8C8D;
+	border-left: 2px solid rgba(0,0,0, 0);
+}
+
+/* =============== HTML element styles =============== */
+/* --------------- Button Styles --------------- */
+.button-line {
+	background: transparent;
+	display: inline-block;
+	font-weight: 400;
+	border-radius: 4px;
+	border: 1px solid;
+	margin: 10px;
+	overflow: visible;
+}
+
+.no-text .icon {
+	margin: 0;
+}
+
+.btn .icon {
+	margin-left: 13px;
+}
+
+.button-white {
+	border-color: #fff;
+	color: #fff;
+}
+
+.button-white:hover {
+	border-color: #fff;
+	color: #fff;
+}
+
+
+
+/* ================ Header Section ================ */
+
+.header-section {
+	position:relative;
+}
+
+/* --------------- Main Navigation Styles --------------- */
+.sticky-bar-wrap {
+	position:fixed;
+	width: 100%;
+	z-index: 1025;
+}
+
+.sticky-section {
+	width: 100%;
+	height: 80px;
+	z-index: 1025;
+	transition: all .3s ease-in;
+	background: rgba(0,0,0, .15);
+}
+
+.nav-bg {
+	background: rgba(0,0,0, .6);
+}
+
+.site-name {
+	color: black;
+	font-family: 'Bangers', cursive;
+	font-size: 24px;
+	padding: 8px 15px;
+	letter-spacing: 1px;
+}
+
+.site-name span {
+	color: #fff;
+	padding: 0 13px;
+	font-weight: 400;
+	height: 35px;
+	width: 60px;
+	display: inline-block;
+	margin-right: 3px;
+	font-size: 28px;
+	line-height: 35px;
+}
+
+.nav-hold {
+	left: 0;
+	right: 0;
+	top: 0;
+	padding-top: 13px;
+	z-index: 1025;
+}
+
+ul.nav > li > a {
+	color:#fff;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+ul.nav > li > a:hover, ul.nav > li > a:focus {
+	background: none !important;
+}
+
+li.current a,
+ul.nav > li > a:hover {
+color:#ccc !important;
+}
+
+.navbar-toggle .icon-bar {
+	background: #ffffff;
+}
+
+
+/* --------------- Home section --------------- */
+
+
+.section-home {
+	position:relative;
+}
+
+.home {
+	min-height: 750px;
+}
+
+.well-come {
+	position:relative;
+	font-size: 50px;
+	line-height: 62px;
+	margin-top: 240px;
+	margin-bottom: 48px;
+	color:#fff !important;
+	font-weight: 700;
+	text-transform:uppercase;
+}
+
+.well-come:after {
+position: absolute;
+content: "";
+width: 220px;
+height: 1px;
+background-color: #FFF;
+bottom: -16px;
+left: calc(50% - 110px);
+}
+
+.intro-message {
+	font-size: 20px;
+	line-height: 1.4;
+	margin-bottom: 48px;
+	color: #fff;
+}
+
+
+/* ================ Features Section ================ */
+.section-feature {
+	background-color: #f9f9f9;
+}
+
+.container.features {
+	padding-top: 132px;
+	padding-bottom: 190px;
+}
+
+.baraja-container {
+	width: 250px;
+	height: 400px;
+}
+
+.baraja-container .single-feature {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.single-feature .feature-title {
+	margin-top: 18px;
+}
+
+.single-feature .feature-text {
+	line-height: 1.5;
+	padding: 0 10px;
+	margin-bottom: 16px;
+}
+
+.baraja-container .single-feature:hover {
+	-webkit-box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.5);
+	-moz-box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.5);
+	-o-box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.5);
+	box-shadow: 0px 0px 10px rgba(110, 110, 110, 0.5);
+}
+
+.single-feature .feature-image {
+
+}
+
+
+.features-control {
+	margin: auto;
+	margin-top: 55px;
+	width: 253px;
+	z-index: 1020;
+}
+
+.control-icon {
+	position: absolute;
+	top:0;
+	padding: 5px 15px;
+	font-size: 20px;
+	height: 46px;
+}
+
+.feature-link a{
+	color:#fff;
+	font-weight: 400;
+}
+.feature-link a i {
+	font-weight: 300;
+}
+
+.features-control #feature-prev {
+	left: 0px;
+}
+
+.features-control #feature-expand {
+	left: 60px;
+}
+
+.features-control #feature-close {
+	left: 120px;
+}
+
+.features-control #feature-next {
+	left: 180px;
+}
+
+
+
+/* ================ Services Section ================ */
+#section-services {
+	position:relative;
+	background-color: #333333;
+	color: #e5e5e5;
+}
+
+.container.services {
+	padding-top: 120px;
+	padding-bottom: 72px;
+}
+
+
+.service {
+	padding-bottom: 48px;
+}
+
+.service-icon {
+	float:left;
+	width: 30%;
+}
+
+.service-desc {
+	display:table;
+}
+
+.service-desc h4 {
+	margin-top: 0;
+}
+
+/* ================ Step-1,step-2,step-3 Sections ================ */
+.container.step {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+
+.section-step {
+	background-color:#f9f9f9;
+}
+
+.step-even {
+	background-color:#333;
+	color:#e5e5e5;
+}
+
+.step-even .step-desc {
+	float:right;
+}
+
+.step-even .step-img {
+	float:right;
+}
+
+.step-video {
+	overflow:hidden;
+}
+
+.step-no {
+	width: 95px;
+	height: 95px;
+	border: 2px solid;
+	border-radius: 50%;
+}
+
+.step-no .no-inner {
+	font-size: 72px;
+	line-height: 86px;
+}
+
+.step-details .step-title {
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.step-details .step-description {
+	margin-bottom: 48px;
+}
+
+.step-details .sub-steps {
+	margin-left: 30px;
+}
+
+.step-details .sub-steps li {
+	margin-bottom: 24px;
+}
+
+.sub-steps .icon {
+	float:left;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-left: 1px solid;
+	line-height: 40px;
+	padding: 0px 13px;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+.sub-steps .sub-text {
+	border: 1px solid;
+	height: 40px;
+	line-height: 40px;
+	display: table;
+	padding: 0 10px;
+}
+
+
+/*
+========================================================================
+# 8 - Screenshots styles
+------------------------------------------------------------------------
+*/
+.screenshot {
+  padding: 120px 0;
+}
+.owl-theme .owl-controls {
+  top: 40%;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  border-radius: 0;
+  margin: 0;
+  height: 90px;
+  position: absolute;
+  width: 45px;
+  text-indent: -99999px;
+  display: none;
+}
+.owl-carousel:hover .owl-buttons div {
+  display: block;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-prev {
+  left: 0px;
+  background: #fff url(../images/left-arrow.png) no-repeat 0px 5px;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-prev:hover {
+  background: rgba(255, 255, 255, 0.4) url(../images/left-arrow-hover.png) no-repeat 0px 5px;   
+}
+.owl-theme .owl-controls .owl-buttons div.owl-next {
+  right: 0px;
+  background: #fff url(../images/right-arrow.png) no-repeat 0px 5px;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-next:hover {
+  background: rgba(255, 255, 255, 0.4) url(../images/right-arrow-hover.png) no-repeat 0px 5px;
+}
+.screenshot-block {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.screenshot-block .caption {
+  background: rgba(0, 167, 221, 0.40);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 75% 0%;
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -o-transition: .4s;
+  -ms-transition: .4s;
+  -webkit-transform: rotate(-360deg) scale(0,0);
+  -moz-transform: rotate(-360deg) scale(0,0);
+  -ms-transform: rotate(-360deg) scale(0,0);
+  -o-transform: rotate(-360deg) scale(0,0);
+  transform: rotate(-360deg) scale(0,0);
+}
+.screenshot-block:hover .caption {
+  -webkit-transform: rotate(0deg) scale(1.2,1.2);
+  -moz-transform: rotate(0deg) scale(1.2,1.2);
+  -ms-transform: rotate(0deg) scale(1.2,1.2);
+  -o-transform: rotate(0deg) scale(1.2,1.2);
+  transform: rotate(0deg) scale(1.2,1.2);
+}
+.screenshot-block .caption a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.screenshot-block .caption .fa {
+  font-size: 30px;
+  background: #fff;  
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 15px rgba(0, 167, 221, 0.8);
+  -webkit-box-shadow: 0px 0px 0px 15px rgba(0, 167, 221, 0.8);
+  -moz-box-shadow: 0px 0px 0px 15px rgba(0, 167, 221, 0.8);
+  font-size: 56px;
+  height: 70px;
+  line-height: 76px;
+  width: 70px;
+}
+
+
+
+
+
+
+/* ------------- Single Project ------------- */
+#portfolio-load {
+	display: none;
+	position:relative;
+	left: 105%;
+	min-height: 400px;
+}
+
+.backToProject {
+
+}
+
+.back-button {
+	display:none;
+	padding-top: 60px;
+}
+
+.project-details h5, .project-info h5 {
+	display:inline-block;
+	margin-top:0;
+	font-weight: 600;
+	border-bottom: 1px solid;
+	padding-bottom: 10px;
+}
+
+.project-details .details-list {}
+
+.project-details .details-list li {
+	color:#e5e5e5;
+	margin-bottom: 4px;
+}
+
+.project-details .details-list li i {
+	margin-right: 7px;
+}
+
+.project-details .details-list li .strong {
+margin-right: 8px;
+}
+
+/* ================ Contact Section ================ */
+#section-contact {
+	position:relative;
+}
+
+.contact {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.contact h2 {
+	margin-bottom: 30px;
+}
+
+.confirmation {
+	display:none;
+	clear: both;
+	color: #e5e5e5;
+}
+
+.confirmation p span {
+	margin-right: 8px;
+}
+
+.contact-form {
+	color:#f9f9f9;
+}
+
+.contact-form .input-field {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	height: 50px;
+}
+
+.textarea-field, .input-field {
+	border: 1px solid #111;
+}
+
+.contact-form .form-item {
+	width: 100%;
+	padding: 5px 15px;
+	border-color:#ffffff;
+	border-radius: 4px;
+	background: transparent;
+	box-shadow: none;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+.contact-form .form-item::-webkit-input-placeholder {
+	color: #f9f9f9;
+}
+
+.contact-form .form-item:-moz-placeholder {
+	color: #f9f9f9;
+}
+
+.contact-form .form-item::-moz-placeholder {
+	color: #f9f9f9;
+}
+
+.contact-form .form-item:-ms-input-placeholder {
+	color: #f9f9f9;
+}
+
+.contact-form .subform {
+	margin-top: 20px;
+}
+
+.contact-form .form-item:hover, .contact-form .form-item:focus {
+	border-color:#ccc;
+	box-shadow: none;
+}
+
+
+
+/* ================ Footer Section ================ */
+#section-footer {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background: #333;
+	color:#e5e5e5;
+}
+
+.footer-title {
+	display: inline-block;
+	margin-bottom: 40px;
+	text-transform: none;
+}
+
+.social-icons ul li {
+	display: inline-block;
+}
+
+.social-icons ul li a{
+	margin-left: 10px;
+	font-size: 28px;
+	color: #9D9D9D;
+	font-weight: normal;
+	text-shadow: none;
+
+	-webkit-transition: all .5s ease-in;
+	-moz-transition: all .5s ease-in;
+	-o-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+}
+
+.copyright {
+	padding-top: 15px;
+}
+
